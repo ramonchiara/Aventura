@@ -39,6 +39,8 @@ namespace Aventura
 
             switch (comando.ToLower())
             {
+                case "norte": resultado = cavaleiro.Ir(Sala.NORTE); break;
+                case "sul": resultado = cavaleiro.Ir(Sala.SUL); break;
                 case "leste": resultado = cavaleiro.Ir(Sala.LESTE); break;
                 case "oeste": resultado = cavaleiro.Ir(Sala.OESTE); break;
             }
