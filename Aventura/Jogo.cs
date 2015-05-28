@@ -8,7 +8,6 @@ namespace Aventura
 {
     class Jogo
     {
-        private Sala atual;
         private Cavaleiro cavaleiro;
         private Princesa princesa;
 
@@ -20,9 +19,8 @@ namespace Aventura
             inicial.SetSala(Sala.LESTE, salao);
             salao.SetSala(Sala.LESTE, torre);
 
-            atual = inicial;
             cavaleiro = new Cavaleiro();
-            cavaleiro.Entrar(atual);
+            cavaleiro.Entrar(inicial);
 
             princesa = new Princesa();
             princesa.Entrar(torre);
